@@ -1,0 +1,158 @@
+.form {
+  width: 408px;
+  background: #171717;
+  border-radius: 10px;
+  padding: 60px 55px;
+}
+
+.form__text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+  
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.form__input {
+  width: 357px;
+  height: 20px;
+  padding: 16px 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin: 0 0 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  
+  
+  color: #4D4D4D;
+}
+
+.form__input-question {
+  width: 357px;
+  height: 140px;
+}
+
+.form__submit {
+  width: 407px;
+  height: 57px;
+  background: #B08055;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  /* identical to box height, or 22px */
+  
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  margin: 0 0 26px;
+  padding: 17px 127px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form__submit:hover {
+  opacity: .8;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox__label {
+  width: 13px;
+  height: 13px;
+  margin: 5px 0 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: #FFFFFF;
+}
+
+.checkbox__label_active {
+  background-image: url(../../images/checkbox-active.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.checkbox__container {
+  width: 13px;
+  height: 13px;
+  opacity: 0;
+  
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.checkbox__text {
+  max-width: 384px;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+  /* or 16px */
+  
+  
+  color: #FFFFFF;
+}
+
+.checkbox__text_link {
+  color: #AF723B;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 744px) and (max-width: 1599px) {
+  .form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 744px) {
+  .form {
+    margin: 0 auto;
+    width: 301px;
+    padding: 50px 22px;
+  }
+
+  .form__text {
+    display: none;
+  }
+
+  .form__input {
+    width: 251px;
+  }
+
+  .form__submit {
+    width: 301px;
+    padding: 14px 71px;
+  }
+
+  .checkbox__text {
+    max-width: 280px;
+  }
+}

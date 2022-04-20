@@ -1,0 +1,133 @@
+.nav {
+  display: none;
+  position: relative;
+  width: 100vw;
+}
+
+.nav__close-btn {
+  width: 22px;
+  height: 22px;
+  background-image: url(../../images/close-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  outline: none;
+  background-color: #171717;
+  position: fixed;
+  top: 23px;
+  right: 23px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav__close-btn:hover {
+  opacity: .8;
+}
+
+@media screen and (min-width: 375px) and (max-width: 744px) {
+  .nav__close-btn {
+    top: 13px;
+    right: 13px;
+  }
+}
+
+.nav__container {
+  position: fixed;
+  width: 520px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: #171717;
+}
+
+@media screen and (min-width: 375px) and (max-width: 744px) {
+  .nav__container {
+    width: 100vw;
+  }
+}
+
+.nav__element {
+  margin: 0 auto 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 auto 22px;
+  transition: .3s;
+}
+
+.nav__link:hover {
+  opacity: .8;
+}
+
+@media screen and (min-width: 375px) and (max-width: 744px) {
+  .nav__link {
+    margin: 0 auto 15px;
+  }
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 159px auto 0;
+}
+
+.nav__overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  right: 0;
+  top: 0;
+  opacity: .3;
+  background-color: #000;
+}
+
+.nav_opened {
+  display: block;
+}
+
+.nav__call-btn {
+  background-color: #fff;
+  height: 56px;
+  width: 227px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 16px 25px;
+  margin: 80px auto 0;
+}
+
+.nav__call-btn_icon {
+  background-image: url(../../images/call-btn.svg);
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.nav__call-btn_number {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+@media screen and (min-width: 744px) and (max-width: 1599px) {
+  .nav__call-btn {
+    display: none;
+  }
+}
